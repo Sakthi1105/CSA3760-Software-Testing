@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Binary {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a decimal number:");
+        int decimal = in.nextInt();
+        String binary = Integer.toBinaryString(decimal);
+        System.out.println("Binary is: " + binary);
+        System.out.println("Octal is: " + Integer.toOctalString(decimal));
+        assert "1100".equals(binary) : "Binary conversion failed"; 
+        assert 14 == decimal : "Decimal value check failed";
+        in.close();
+    }
+}
