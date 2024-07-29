@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String str;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        str = input.nextLine();
+        System.out.println("Reverse of the string '" + str + "' is:");
+        for (int j = str.length(); j > 0; j--) {
+            System.out.print(str.charAt(j - 1));
+        }
+        assert "mani".equals(str) : "Assertion failed!";
+    }
+}
